@@ -23,7 +23,7 @@ get_centrality <- function(df){
 
 ## convert list to data frame
 list_to_frame <- function(a_list){
-  d1 = res_central %>% as.data.frame() %>% tidyr::gather(key = "sample", value = "avg_links")
+  d1 = a_list %>% as.data.frame() %>% tidyr::gather(key = "sample", value = "avg_links")
   d1$sample = factor(d1$sample, levels = unique(d1$sample))
   return(d1)
 }
