@@ -46,6 +46,7 @@ plot_trend <- function(d, metric = "mean"){
 
 }
 
+## plot trend line
 plot_trend_line <- function(d){
   d %>% group_by(sample) %>%  summarise(m = mean(avg_links), sd = sd(avg_links)) %>%  mutate(size = as.numeric(str_extract(sample, "\\d+"))) %>%
     ggplot(aes(x = size, y = m)) + geom_point() + geom_line()
