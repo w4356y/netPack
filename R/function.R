@@ -46,6 +46,27 @@ plot_trend <- function(d, metric = "mean"){
 
 }
 
+## calculate the corelation of 2 genus
+cal_cor <- function(x,y){
+  x1 = seq_sample[,x]
+  x2 = seq_sample[,y]
+  if(sum(x1>0 & x2>0) >=3){
+    return(cor.test(x1[x1>0 & x2>0], x2[x1>0 & x2>0],method = "pearson")$estimate)
+  }else{
+    return(0)
+  }
+}
+## calculate the significance level of  corelation of 2 genus
+cal_p <- function(x,y){
+  x1 = seq_sample[,x]
+  x2 = seq_sample[,y]
+  if(sum(x1>0 & x2>0) >=3){
+    return(cor.test(x1[x1>0 & x2>0], x2[x1>0 & x2>0],method = "pearson")$p.value)
+  }else{
+    return(1)
+  }
+}
+
 ## plot trend line
 plot_trend_line <- function(d){
   d %>% group_by(sample) %>%  summarise(m = mean(avg_links), sd = sd(avg_links)) %>%  mutate(size = as.numeric(str_extract(sample, "\\d+"))) %>%
