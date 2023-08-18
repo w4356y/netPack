@@ -1,0 +1,501 @@
+{
+    "nodes": [
+        {
+            "id": "g__Bacteroides;"
+        },
+        {
+            "id": "g__Streptococcus;"
+        },
+        {
+            "id": "g__Bifidobacterium;"
+        },
+        {
+            "id": "g__Parabacteroides;"
+        },
+        {
+            "id": "g__Rothia;"
+        },
+        {
+            "id": "g__Erysipelatoclostridium;"
+        },
+        {
+            "id": "g__Prevotella_9;"
+        },
+        {
+            "id": "g__Corynebacterium;"
+        },
+        {
+            "id": "g__Collinsella;"
+        },
+        {
+            "id": "g__[Ruminococcus] gnavus group;"
+        },
+        {
+            "id": "g__Lactobacillus;"
+        },
+        {
+            "id": "g__Escherichia-Shigella;"
+        },
+        {
+            "id": "g__Gemella;"
+        },
+        {
+            "id": "g__Staphylococcus;"
+        },
+        {
+            "id": "g__Enterococcus;"
+        },
+        {
+            "id": "g__Veillonella;"
+        },
+        {
+            "id": "g__Prevotella;"
+        },
+        {
+            "id": "g__Klebsiella;"
+        },
+        {
+            "id": "g__Haemophilus;"
+        },
+        {
+            "id": "g__Blautia;"
+        },
+        {
+            "id": "g__Faecalibacterium;"
+        }
+    ],
+    "edges": [
+        {
+            "from": "g__Bacteroides;",
+            "to": "g__Gemella;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Streptococcus;",
+            "to": "g__Veillonella;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Bifidobacterium;",
+            "to": "g__Prevotella;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Parabacteroides;",
+            "to": "g__Klebsiella;",
+            "normal": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Rothia;",
+            "to": "g__[Ruminococcus] gnavus group;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Erysipelatoclostridium;",
+            "to": "g__Klebsiella;",
+            "normal": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Erysipelatoclostridium;",
+            "to": "g__Haemophilus;",
+            "normal": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Prevotella_9;",
+            "to": "g__Veillonella;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Bifidobacterium;",
+            "to": "g__Blautia;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Corynebacterium;",
+            "to": "g__Bacteroides;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Parabacteroides;",
+            "to": "g__Staphylococcus;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Bacteroides;",
+            "to": "g__Faecalibacterium;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Collinsella;",
+            "to": "g__Streptococcus;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__[Ruminococcus] gnavus group;",
+            "to": "g__Veillonella;",
+            "normal": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Rothia;",
+            "to": "g__Escherichia-Shigella;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__[Ruminococcus] gnavus group;",
+            "to": "g__Escherichia-Shigella;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Lactobacillus;",
+            "to": "g__Veillonella;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Escherichia-Shigella;",
+            "to": "g__Haemophilus;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Gemella;",
+            "to": "g__Staphylococcus;",
+            "normal": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Bifidobacterium;",
+            "to": "g__Lactobacillus;",
+            "normal": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Staphylococcus;",
+            "to": "g__Veillonella;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Enterococcus;",
+            "to": "g__Staphylococcus;",
+            "normal": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Rothia;",
+            "to": "g__Staphylococcus;",
+            "normal": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "green",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        },
+        {
+            "from": "g__Enterococcus;",
+            "to": "g__Streptococcus;",
+            "normal": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "2",
+                    "lineJoin": "round"
+                }
+            },
+            "hovered": {
+                "stroke": {
+                    "color": "black",
+                    "thickness": "3",
+                    "lineJoin": "round"
+                }
+            }
+        }
+    ]
+}
