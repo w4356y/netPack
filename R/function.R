@@ -72,3 +72,29 @@ plot_trend_line <- function(d){
   d %>% group_by(sample) %>%  summarise(m = mean(avg_links), sd = sd(avg_links)) %>%  mutate(size = as.numeric(str_extract(sample, "\\d+"))) %>%
     ggplot(aes(x = size, y = m)) + geom_point() + geom_line()
 }
+
+
+## generate a json file for network visualization in anycharts
+
+convert_to_json <- function(df_net){
+  pos = NULL
+  neg = NULL
+  pos_hover = NULL
+  neg_hover = NULL
+  #pos$stroke =  list(stroke = list(color="green",thickness="2",dash = "10 5",lineJoin="round"))
+  #neg$stroke =  list(stroke = list(color="black",thickness="2",dash = "10 5",lineJoin="round"))
+  pos$stroke =  list(stroke = list(color="green",thickness="2",lineJoin="round"))
+  neg$stroke =  list(stroke = list(color="black",thickness="2",lineJoin="round"))
+  pos_hover$stroke =  list(stroke = list(color="green",thickness="3",lineJoin="round"))
+  neg_hover$stroke =  list(stroke = list(color="black",thickness="3",lineJoin="round"))
+  df_net$from = stringr::str_extract(df_net$s_name,"g__(.*)")
+  df_net$to = stringr::str_extract(df_net$e_name,"g__(.*)")
+  df_net = df_net %>% mutate(normal = ifelse(link_type == "Pos", pos, neg), hovered = ifelse(link_type == "Pos", pos_hover, neg_hover))
+  edge_df = df_net %>% select(from, to, normal, hovered)
+  node_df = data.frame(id = unique(c(df_net$from,df_net$to)))
+  # edge_list = jsonlite::toJSON(df_net %>% select(from, to), auto_unbox = TRUE)
+  # node_list = jsonlite::toJSON(data.frame(id = unique(df_net$from,df_net$to)), auto_unbox = TRUE)
+  json_out = jsonlite::toJSON(list(nodes = node_df, edges = edge_df ),auto_unbox = TRUE)   %>% jsonlite::prettify()
+  return(json_out)
+}
+
